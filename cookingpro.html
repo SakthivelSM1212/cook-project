@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectcook</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .bg-image {
+      background-image: url('https://www.spar.co.uk/media/1x1n3yq2/shutterstock_370298699.jpg?anchor=center&mode=crop&heightratio=0.5625&width=1920&rnd=133137651761830000'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      height: 100vh;
+      /* Apply backdrop-filter to blur the background */
+      backdrop-filter: blur(1px);
+    }
+    .textt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .img{
+        height: 300px;
+        width: 300px;
+    }
+    .lead{
+        font-weight: bold;
+        color: white;
+        font-size: 50px;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center; /* Align text in the center */
+        margin-bottom: 20px; /* Add gap below the text */
+    }
+    .use{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; /* Add gap above the user icons */
+    }
+    .user-icon, .admin-icon {
+      display: flex;
+      align-items: center;
+      font-size: 150%;
+      margin-bottom: 10px; /* Add gap between user icons and admin icons */
+    }
+
+    a{
+      text-decoration: none;
+      color: cyan;
+      margin-left: 5px; /* Add gap between icon and text */
+    }
+    .user-icon .fa-solid, .admin-icon .fa-solid {
+      margin-right: 10px; /* Adjust margin as needed */
+    }
+  </style>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body class="bg-image">
+      <div class="textt">
+        <img class="img" src="girl.png" alt="">
+         <p class="lead">Welcome to the world of <span style="color: brown;">Food Hub</span></p>
+      </div>
+      <div class="flex flex-1 flex-col items-center lg:items-start overflow-hidden">
+        <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500 font-bold text-3xl md:text-4 lg:text-10xl text-center lg:text-center mb-2 py-2 slideUp">
+            Learn Cook Share<br/>Cooking Made Easy.
+        </h2>
+        <div class="use">
+          <p class="user-icon">
+           <span style="color: aliceblue;"><i class="fa-solid fa-user"></i></span> 
+            <a href="login.html">User</a>
+          </p>
+          <p class="admin-icon">
+             <span style="color: aliceblue;"><i class="fa-solid fa-lock"></i></span> 
+              <a href="logg.html">Admin</a>
+          </p>
+        </div>
+      </div>
+</body>
+</html>
